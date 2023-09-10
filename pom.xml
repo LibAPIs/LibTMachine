@@ -1,24 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<organization>
 		<name>MClarkDev.com</name>
-		<url>https://tools.mclarkdev.com/tools</url>
+		<url>https://about.mclarkdev.com/</url>
 	</organization>
 
 	<groupId>com.mclarkdev.tools</groupId>
 	<artifactId>libtmachine</artifactId>
-	<version>1.0</version>
+	<version>1.5.1</version>
 	<packaging>jar</packaging>
 
 	<name>libtmachine</name>
-	<url>https://about.mclarkdev.com/posts/1097/libapis/</url>
-	<description>Controller for TimeMachine clocks.</description>
+	<url>https://git.mclarkdev.com/LibAPIs/LibTMachine.git</url>
+	<description>Basic UDP controller for TimeMachine clocks.</description>
 
 	<scm>
-		<url>https://git.mclarkdev.com/MClarkDev.com--Public/libtmachine.git</url>
+		<url>https://git.mclarkdev.com/LibAPIs/LibTMachine.git</url>
 	</scm>
 
 	<licenses>
@@ -48,7 +46,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>3.1.0</version>
+				<version>3.3.0</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -61,7 +59,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.1.1</version>
+				<version>3.5.0</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -74,7 +72,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
-				<version>3.0.1</version>
+				<version>3.1.0</version>
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>

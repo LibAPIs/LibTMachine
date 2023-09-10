@@ -5,12 +5,23 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
+/**
+ * LibTMachine // LibTMachine
+ * 
+ * Basic UDP controller for TimeMachine clocks.
+ */
 public class LibTMachine {
 
 	private final DatagramSocket serverSocket;
 
 	private final InetAddress clockAddr;
 
+	/**
+	 * Instantiate a new instance of the LibTMachine controller.
+	 * 
+	 * @param clock the clock address
+	 * @throws IOException failure resolving address
+	 */
 	public LibTMachine(String clock) throws IOException {
 
 		serverSocket = new DatagramSocket();
@@ -93,7 +104,7 @@ public class LibTMachine {
 	/**
 	 * Sends a command to the device.
 	 * 
-	 * @param buff
+	 * @param buff raw byte buffer
 	 * @return command sent
 	 */
 	private boolean send(byte[] buff) {
